@@ -1,0 +1,3 @@
+[submodule "SwiftDDHTimerControl/submodules/UIColor-Hex-Swift"]
+	path = SwiftDDHTimerControl/submodules/UIColor-Hex-Swift
+	url = https://github.com/hideji/UIColor-Hex-Swift.git
