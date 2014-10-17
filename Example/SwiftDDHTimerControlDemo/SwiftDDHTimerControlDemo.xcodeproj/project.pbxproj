@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		250A42F219F1687300DD5DD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250A42F119F1687300DD5DD9 /* AppDelegate.swift */; };
+		250A42F419F1687300DD5DD9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250A42F319F1687300DD5DD9 /* ViewController.swift */; };
+		250A42F719F1687300DD5DD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 250A42F519F1687300DD5DD9 /* Main.storyboard */; };
+		250A42F919F1687300DD5DD9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 250A42F819F1687300DD5DD9 /* Images.xcassets */; };
+		250A42FC19F1687300DD5DD9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 250A42FA19F1687300DD5DD9 /* LaunchScreen.xib */; };
+		250A430819F1687300DD5DD9 /* SwiftDDHTimerControlDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250A430719F1687300DD5DD9 /* SwiftDDHTimerControlDemoTests.swift */; };
+		250A432319F16AEA00DD5DD9 /* SwiftDDHTimerControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 250A431719F168AF00DD5DD9 /* SwiftDDHTimerControl.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		250A430219F1687300DD5DD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 250A42E419F1687300DD5DD9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 250A42EB19F1687300DD5DD9;
+			remoteInfo = SwiftDDHTimerControlDemo;
+		};
+		250A431619F168AF00DD5DD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 250A431119F168AF00DD5DD9 /* SwiftDDHTimerControl.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25847FA919EFE1A400D573D1;
+			remoteInfo = SwiftDDHTimerControl;
+		};
+		250A431819F168AF00DD5DD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 250A431119F168AF00DD5DD9 /* SwiftDDHTimerControl.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25847FB419EFE1A400D573D1;
+			remoteInfo = SwiftDDHTimerControlTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		250A42EC19F1687300DD5DD9 /* SwiftDDHTimerControlDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDDHTimerControlDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		250A42F019F1687300DD5DD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		250A42F119F1687300DD5DD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		250A42F319F1687300DD5DD9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		250A42F619F1687300DD5DD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		250A42F819F1687300DD5DD9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		250A42FB19F1687300DD5DD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		250A430119F1687300DD5DD9 /* SwiftDDHTimerControlDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftDDHTimerControlDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		250A430619F1687300DD5DD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		250A430719F1687300DD5DD9 /* SwiftDDHTimerControlDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDDHTimerControlDemoTests.swift; sourceTree = "<group>"; };
+		250A431119F168AF00DD5DD9 /* SwiftDDHTimerControl.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftDDHTimerControl.xcodeproj; path = ../../SwiftDDHTimerControl.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		250A42E919F1687300DD5DD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				250A432319F16AEA00DD5DD9 /* SwiftDDHTimerControl.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		250A42FE19F1687300DD5DD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		250A42E319F1687300DD5DD9 = {
+			isa = PBXGroup;
+			children = (
+				250A431119F168AF00DD5DD9 /* SwiftDDHTimerControl.xcodeproj */,
+				250A42EE19F1687300DD5DD9 /* SwiftDDHTimerControlDemo */,
+				250A430419F1687300DD5DD9 /* SwiftDDHTimerControlDemoTests */,
+				250A42ED19F1687300DD5DD9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		250A42ED19F1687300DD5DD9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				250A42EC19F1687300DD5DD9 /* SwiftDDHTimerControlDemo.app */,
+				250A430119F1687300DD5DD9 /* SwiftDDHTimerControlDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		250A42EE19F1687300DD5DD9 /* SwiftDDHTimerControlDemo */ = {
+			isa = PBXGroup;
+			children = (
+				250A42F119F1687300DD5DD9 /* AppDelegate.swift */,
+				250A42F319F1687300DD5DD9 /* ViewController.swift */,
+				250A42F519F1687300DD5DD9 /* Main.storyboard */,
+				250A42F819F1687300DD5DD9 /* Images.xcassets */,
+				250A42FA19F1687300DD5DD9 /* LaunchScreen.xib */,
+				250A42EF19F1687300DD5DD9 /* Supporting Files */,
+			);
+			path = SwiftDDHTimerControlDemo;
+			sourceTree = "<group>";
+		};
+		250A42EF19F1687300DD5DD9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				250A42F019F1687300DD5DD9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		250A430419F1687300DD5DD9 /* SwiftDDHTimerControlDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				250A430719F1687300DD5DD9 /* SwiftDDHTimerControlDemoTests.swift */,
+				250A430519F1687300DD5DD9 /* Supporting Files */,
+			);
+			path = SwiftDDHTimerControlDemoTests;
+			sourceTree = "<group>";
+		};
+		250A430519F1687300DD5DD9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				250A430619F1687300DD5DD9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		250A431219F168AF00DD5DD9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				250A431719F168AF00DD5DD9 /* SwiftDDHTimerControl.framework */,
+				250A431919F168AF00DD5DD9 /* SwiftDDHTimerControlTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		250A42EB19F1687300DD5DD9 /* SwiftDDHTimerControlDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 250A430B19F1687300DD5DD9 /* Build configuration list for PBXNativeTarget "SwiftDDHTimerControlDemo" */;
+			buildPhases = (
+				250A42E819F1687300DD5DD9 /* Sources */,
+				250A42E919F1687300DD5DD9 /* Frameworks */,
+				250A42EA19F1687300DD5DD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftDDHTimerControlDemo;
+			productName = SwiftDDHTimerControlDemo;
+			productReference = 250A42EC19F1687300DD5DD9 /* SwiftDDHTimerControlDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		250A430019F1687300DD5DD9 /* SwiftDDHTimerControlDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 250A430E19F1687300DD5DD9 /* Build configuration list for PBXNativeTarget "SwiftDDHTimerControlDemoTests" */;
+			buildPhases = (
+				250A42FD19F1687300DD5DD9 /* Sources */,
+				250A42FE19F1687300DD5DD9 /* Frameworks */,
+				250A42FF19F1687300DD5DD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				250A430319F1687300DD5DD9 /* PBXTargetDependency */,
+			);
+			name = SwiftDDHTimerControlDemoTests;
+			productName = SwiftDDHTimerControlDemoTests;
+			productReference = 250A430119F1687300DD5DD9 /* SwiftDDHTimerControlDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		250A42E419F1687300DD5DD9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = hideji;
+				TargetAttributes = {
+					250A42EB19F1687300DD5DD9 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					250A430019F1687300DD5DD9 = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = 250A42EB19F1687300DD5DD9;
+					};
+				};
+			};
+			buildConfigurationList = 250A42E719F1687300DD5DD9 /* Build configuration list for PBXProject "SwiftDDHTimerControlDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 250A42E319F1687300DD5DD9;
+			productRefGroup = 250A42ED19F1687300DD5DD9 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 250A431219F168AF00DD5DD9 /* Products */;
+					ProjectRef = 250A431119F168AF00DD5DD9 /* SwiftDDHTimerControl.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				250A42EB19F1687300DD5DD9 /* SwiftDDHTimerControlDemo */,
+				250A430019F1687300DD5DD9 /* SwiftDDHTimerControlDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		250A431719F168AF00DD5DD9 /* SwiftDDHTimerControl.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftDDHTimerControl.framework;
+			remoteRef = 250A431619F168AF00DD5DD9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		250A431919F168AF00DD5DD9 /* SwiftDDHTimerControlTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwiftDDHTimerControlTests.xctest;
+			remoteRef = 250A431819F168AF00DD5DD9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		250A42EA19F1687300DD5DD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				250A42F719F1687300DD5DD9 /* Main.storyboard in Resources */,
+				250A42FC19F1687300DD5DD9 /* LaunchScreen.xib in Resources */,
+				250A42F919F1687300DD5DD9 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		250A42FF19F1687300DD5DD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		250A42E819F1687300DD5DD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				250A42F419F1687300DD5DD9 /* ViewController.swift in Sources */,
+				250A42F219F1687300DD5DD9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		250A42FD19F1687300DD5DD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				250A430819F1687300DD5DD9 /* SwiftDDHTimerControlDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		250A430319F1687300DD5DD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 250A42EB19F1687300DD5DD9 /* SwiftDDHTimerControlDemo */;
+			targetProxy = 250A430219F1687300DD5DD9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		250A42F519F1687300DD5DD9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				250A42F619F1687300DD5DD9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		250A42FA19F1687300DD5DD9 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				250A42FB19F1687300DD5DD9 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		250A430919F1687300DD5DD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		250A430A19F1687300DD5DD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		250A430C19F1687300DD5DD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SwiftDDHTimerControlDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		250A430D19F1687300DD5DD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SwiftDDHTimerControlDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		250A430F19F1687300DD5DD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SwiftDDHTimerControlDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftDDHTimerControlDemo.app/SwiftDDHTimerControlDemo";
+			};
+			name = Debug;
+		};
+		250A431019F1687300DD5DD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SwiftDDHTimerControlDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftDDHTimerControlDemo.app/SwiftDDHTimerControlDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		250A42E719F1687300DD5DD9 /* Build configuration list for PBXProject "SwiftDDHTimerControlDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				250A430919F1687300DD5DD9 /* Debug */,
+				250A430A19F1687300DD5DD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		250A430B19F1687300DD5DD9 /* Build configuration list for PBXNativeTarget "SwiftDDHTimerControlDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				250A430C19F1687300DD5DD9 /* Debug */,
+				250A430D19F1687300DD5DD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		250A430E19F1687300DD5DD9 /* Build configuration list for PBXNativeTarget "SwiftDDHTimerControlDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				250A430F19F1687300DD5DD9 /* Debug */,
+				250A431019F1687300DD5DD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 250A42E419F1687300DD5DD9 /* Project object */;
+}

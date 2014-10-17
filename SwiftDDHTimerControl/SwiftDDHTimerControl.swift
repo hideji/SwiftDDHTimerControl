@@ -31,7 +31,7 @@ extension Float {
 }
 
 
-enum DDHTimerType: Int {
+public enum DDHTimerType: Int {
     /**
     *  The ring looks like a clock
     */
@@ -51,7 +51,7 @@ enum DDHTimerType: Int {
     
 }
 
-class SwiftDDHTimerControl: UIControl {
+public class SwiftDDHTimerControl: UIControl {
 
     // ：private　　@property (nonatomic, assign)として
     private var currentValue:Float = 0.0
@@ -73,7 +73,7 @@ class SwiftDDHTimerControl: UIControl {
     private var fontSize:CGFloat = 0.0
     
     // TODO: public ?
-    internal var minutesOrSeconds:Int = 0 {
+    public var minutesOrSeconds:Int = 0 {
         didSet(oldMinutesOrSeconds) {
             if (minutesOrSeconds > lroundf(Float(self.maxValue))) {
                 self.minutesOrSeconds = lroundf(Float(self.maxValue));
@@ -90,19 +90,19 @@ class SwiftDDHTimerControl: UIControl {
     }
     
     
-    var color = UIColor.greenColor()
-    var highlightColor = UIColor.yellowColor()
-    var titleLabel = UILabel()
-    var ringWidth:CGFloat = 4.0
+    public var color = UIColor.greenColor()
+    public var highlightColor = UIColor.yellowColor()
+    public var titleLabel = UILabel()
+    public var ringWidth:CGFloat = 4.0
     
-    var dtype:DDHTimerType = .DDHTimerTypeElements
+    public var dtype:DDHTimerType = .DDHTimerTypeElements
     
     
-    required init(coder aDecoder: NSCoder) {
+    required public init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
-    override init(frame: CGRect) {
+    override public init(frame: CGRect) {
         super.init(frame: frame)
         
         minutesOrSecondsLabel.layer.cornerRadius = 6.0
@@ -124,7 +124,7 @@ class SwiftDDHTimerControl: UIControl {
     }
     
     
-    override func layoutSubviews() {
+    override public func layoutSubviews() {
         var frame = self.frame
         self.timerElementRect = CGRectInset(frame, kDDHInsetX, kDDHInsetY)
         self.radius = CGRectGetWidth(self.timerElementRect) / 2
@@ -147,7 +147,7 @@ class SwiftDDHTimerControl: UIControl {
     
     // Only override drawRect: if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
-    override func drawRect(rect: CGRect) {
+    override public func drawRect(rect: CGRect) {
         // FIXME: Objc [NSString stringWithFormat: @"%ld", (long)round(self.minutesOrSeconds)];
         var expression = NSString(format: "%d", self.minutesOrSeconds)
         
@@ -219,7 +219,7 @@ class SwiftDDHTimerControl: UIControl {
     }
     
     // MARK: Touch events
-    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
+    override public func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
         let touch: UITouch = event.touchesForView(self)?.anyObject() as UITouch
         let position = touch.locationInView(self)
         
@@ -250,7 +250,7 @@ class SwiftDDHTimerControl: UIControl {
         //            })
     }
     
-    override func touchesEnded(touches: NSSet, withEvent event: UIEvent) {
+    override public func touchesEnded(touches: NSSet, withEvent event: UIEvent) {
         self.highlighted = false
         
         self.minutesOrSecondsLabel.backgroundColor = UIColor.clearColor()
@@ -275,11 +275,11 @@ class SwiftDDHTimerControl: UIControl {
         return UIAccessibilityTraitAdjustable
     }
     
-    override func accessibilityIncrement() {
+    override public func accessibilityIncrement() {
         self.minutesOrSeconds = self.minutesOrSeconds + 1;
     }
     
-    override func accessibilityDecrement() {
+    override public func accessibilityDecrement() {
         self.minutesOrSeconds = self.minutesOrSeconds - 1;
     }
 
