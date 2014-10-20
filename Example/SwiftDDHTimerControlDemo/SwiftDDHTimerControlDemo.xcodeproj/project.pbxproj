@@ -13,7 +13,7 @@
 		250A42F919F1687300DD5DD9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 250A42F819F1687300DD5DD9 /* Images.xcassets */; };
 		250A42FC19F1687300DD5DD9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 250A42FA19F1687300DD5DD9 /* LaunchScreen.xib */; };
 		250A430819F1687300DD5DD9 /* SwiftDDHTimerControlDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250A430719F1687300DD5DD9 /* SwiftDDHTimerControlDemoTests.swift */; };
-		250A432319F16AEA00DD5DD9 /* SwiftDDHTimerControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 250A431719F168AF00DD5DD9 /* SwiftDDHTimerControl.framework */; };
+		2517145A19F5142900ACA440 /* SwiftDDHTimerControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 250A431719F168AF00DD5DD9 /* SwiftDDHTimerControl.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				250A432319F16AEA00DD5DD9 /* SwiftDDHTimerControl.framework in Frameworks */,
+				2517145A19F5142900ACA440 /* SwiftDDHTimerControl.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

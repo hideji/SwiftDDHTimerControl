@@ -206,7 +206,11 @@ public class SwiftDDHTimerControl: UIControl {
         ]
         
         self.minutesOrSecondsLabel.attributedText = NSAttributedString(string: expression, attributes: labelFontAttributes)
-        
+
+        if (self.highlighted) {
+            self.minutesOrSecondsLabel.textColor = self.highlightColor
+            self.titleLabel.textColor = self.highlightColor
+        }
     }
     
     // MARK: helper methods
@@ -219,7 +223,14 @@ public class SwiftDDHTimerControl: UIControl {
     }
     
     // MARK: Touch events
-    override public func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
+    override public func beginTrackingWithTouch(touch: UITouch, withEvent event: UIEvent) -> Bool {
+        self.highlighted = true
+        self.minutesOrSecondsLabel.textColor = self.highlightColor
+        self.titleLabel.textColor = self.highlightColor
+        return true
+    }
+    
+    override public func continueTrackingWithTouch(touch: UITouch, withEvent event: UIEvent) -> Bool {
         let touch: UITouch = event.touchesForView(self)?.anyObject() as UITouch
         let position = touch.locationInView(self)
         
@@ -236,22 +247,12 @@ public class SwiftDDHTimerControl: UIControl {
         
         self.highlighted = handlePath.containsPoint(position) ? true : false
         self.currentValue = Float(self.minutesOrSeconds)
-        
-        //        UIView.animateWithDuration(0.2,
-        //            delay: 0.0,
-        //            usingSpringWithDamping: 1.0,
-        //            initialSpringVelocity: 20.0,
-        //            options: nil,
-        //            animations: {
-        //                self.minutesOrSecondsLabel.center = CGPointMake(handlePoint.x, handlePoint.y - self.staticLableRect.size.height/2 - 20)
-        //            },
-        //            completion: {finished in
-        //                self.setNeedsDisplay()
-        //            })
+        return true
     }
     
-    override public func touchesEnded(touches: NSSet, withEvent event: UIEvent) {
+    override public func endTrackingWithTouch(touch: UITouch, withEvent event: UIEvent) {
         self.highlighted = false
+        self.titleLabel.textColor = self.color
         
         self.minutesOrSecondsLabel.backgroundColor = UIColor.clearColor()
         UIView.animateWithDuration(0.2,
